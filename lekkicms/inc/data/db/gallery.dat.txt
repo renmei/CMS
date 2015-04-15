@@ -1,0 +1,2 @@
+1"Galeria"galeria"160x120"5"1
+2"uploads"uploads"160x120"100"0

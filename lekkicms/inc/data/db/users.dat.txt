@@ -1,0 +1,2 @@
+1"admin"c704467f151a32bcfa2055a2806271c0"avaya272@gmail.com"0
+2"mzoltko"5ba5f968e8117bc25880cf488627225f"mzoltko@zetrov.pl"pages,modules,users,settings
