@@ -1,0 +1,8 @@
+#featured a#prevarrow {
+	bottom: 14px;
+}
+
+#featured a#nextarrow {
+	bottom: 14px;
+	right: -1px;
+}

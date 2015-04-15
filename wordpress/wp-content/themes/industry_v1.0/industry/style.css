@@ -1,0 +1,919 @@
+/*
+Theme Name: WP Industry
+Theme URI: http://themeforest.net/user/contempoinc?ref=contempoinc
+Description: This theme is Shared by <a href="http://www.free-premium-wordpress-themes.com"><strong>Free Premium Wordpress Themes</strong></a>
+Version: 1.0
+Author: Chris Robinson
+Author URI: http://www.free-premium-wordpress-themes.com/
+Tags: grey, clean, grid, premium, portfolio, business, fixed width, widgets, video
+
+==============================================================================*//*
+                                       |___|
+                                       |- -|                                   
+                  +---------------oooO--(o)---------------------+              
+                  |                  Visit Us At                |              
+                  |	                                            |              
+                  |    www.free-premium-wordpress-themes.com    |              
+                  |                                             |              
+                  +--------------------------Ooo----------------+              
+                                      |__|__|                                  
+                                       || ||                                   
+                                      ooO Ooo                             
+*/
+
+* { /* removes defaults from all elements */
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+@font-face {
+  font-family: "League Gothic";
+  src: url(fonts/league_gothic.otf) format("opentype");
+}
+
+/** Body
+==============================================================================*/
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	color: #555;
+	margin: 0 auto;
+	background: #efefef;
+}
+
+/** Floats
+==============================================================================*/
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/** Images
+==============================================================================*/
+
+#leftcol img.left,
+#leftcol img.alignleft {
+	margin: 0 16px 8px 0;
+}
+
+#leftcol img.right,
+#leftcol img.alignright {
+	margin: 0 0 8px 16px;
+}
+
+#leftcol img.centered {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img.gallery {
+	margin: 0 15px 15px 0;
+}
+
+a img {
+	border: none;
+	display: block;
+}
+
+/** H Tags
+==============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	line-height: 36px;
+	margin: 0 0 4px 0;
+}
+
+.page h1 {
+	margin-bottom: 15px;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif, bold;
+	font-size: 18px;
+	line-height: 24px;
+	margin: 0 0 15px 0;
+	text-transform: uppercase;
+}
+
+#comments h2, h2.btop {
+	padding: 16px 0 0 0;
+	border-top: 2px solid #444444;
+}
+
+h2.btop {
+	margin-top: 24px;
+}
+
+h3 {
+	font-size: 18px;
+	line-height: 18px;
+	margin: 0 0 8px 0;
+}
+
+h4 {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+h5 {
+	font-size: 14px;
+	line-height: 14px;
+}
+
+h6 {
+	font-size: 12px;
+	line-height: 12px;
+	font-weight: bold;
+}
+
+/** Links
+==============================================================================*/
+
+a:link {
+	color: #2e466a;
+	text-decoration: none;
+}
+
+a:visited {
+	color: #4c596b;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #444;
+	text-decoration: underline;
+}
+
+a:active {
+	color: #2e466a;
+	text-decoration: none;
+}
+
+/** Buttons
+==============================================================================*/
+
+#submit {
+	border: none;
+}
+
+a.btn,
+#postnav a,
+input.btn {
+	display: block;
+	text-decoration: none;
+	font-size: 14px;
+    padding: 6px 12px;
+	color: #fff;
+	-moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0 -1px 1px rgba(0, 0, 0, 0.25), -2px 0 1px rgba(0, 0, 0, 0.25);
+	background: #333;
+}
+
+a.btn:hover,
+#postnav a:hover,
+input.btn:hover {
+	background: #555;
+}
+
+/** Paragraphs
+==============================================================================*/
+
+p {
+	margin: 0 0 18px 0;
+}
+
+#postcontent p + p,
+.page p + p {
+	text-indent: 36px;
+}
+
+/** Lists
+==============================================================================*/
+
+#leftcol dl,
+#leftcol ol,
+#leftcol ul {
+	margin: 0 0 30px 30px;
+}
+
+#leftcol ol li,
+#leftcol ul li,
+#sidebar ul li,
+#footerwidgets ul li {
+	line-height: 18px;
+}
+
+#sidebar ul li,
+#related ul li,
+#footerwidgets ul li {
+	padding: 4px 0;
+}
+
+#leftcol dl {
+	padding-left: 0;
+}
+
+#leftcol dl dt {
+	font-weight: bold;
+}
+
+#leftcol ol li {
+	list-style-type: decimal;
+}
+
+#leftcol ul li {
+	list-style-type: disc;
+}
+
+/** Tables
+==============================================================================*/
+
+#leftcol table {
+	border-spacing: 2px;
+	margin: 0 0 30px 0;
+}
+
+#leftcol th {
+	font-weight: bold;
+	border-top: 1px solid #b2ceed;
+	border-bottom: 1px solid #91a8c3;
+	background-color: #a3bdda;
+}
+
+#leftcol th,
+#content td {
+	padding: 5px 10px;
+}
+
+#leftcol tr.even {
+	background-color: #cdcdcd;
+}
+
+/** Misc Elements
+==============================================================================*/
+
+pre {
+	width: 590px;
+	padding: 15px;
+	margin: 0 0 30px 0;
+	border: 1px solid #ccc;
+	border-left: 5px solid #ccc;
+	background-color: #fff;
+	white-space: pre-wrap; /* css-3 */
+	white-space: -moz-pre-wrap !important; /* Mozilla, since 1999 */
+	white-space: -pre-wrap; /* Opera 4-6 */
+	white-space: -o-pre-wrap; /* Opera 7 */
+	word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+blockquote {
+	margin: 0 0 18px 36px;
+	padding: 0 0 0 15px;
+	font-style: italic;
+	border-left: 3px solid #ccc;
+}
+
+/** Nav
+==============================================================================*/
+
+#navwrap {
+	position: relative;
+	z-index: 5;
+	height: 39px;
+	margin: 0 auto;
+	background: url(images/nav_bg.png) repeat-x;
+}
+
+#nav {
+	width: 975px;
+	margin: 0 auto;
+	background: url(images/nav_divider.png) left no-repeat;
+}
+
+#nav ul,
+#nav ul ul {
+	list-style-position: outside;
+	position: center;
+	z-index: 5;
+}
+
+#nav li {
+	float: center;
+	line-height: 35px;
+	background: url(images/nav_divider.png) no-repeat right;
+}
+
+#nav li ul li {
+	background-image: none;
+}
+
+#nav li {
+	float: center;
+	position: relative;
+	z-index: 20;
+}
+
+#nav li a {
+	display: block;
+	position: relative;
+	float: center;
+	height: 35px;
+	padding: 0 16px;
+	z-index: 35;
+}
+
+#nav ul ul {
+	display: none;
+	left: -1px;
+	position: absolute;
+	top: 34px;
+	width: 230px;
+	border-right: 1px solid #e8e8e8;
+	border-left: 1px solid #777777;
+	background: #ababab;
+}
+
+#nav li ul a {
+	width: 200px;
+	height: auto;
+	float: left;
+	text-align: left;
+	padding: 0 16px;
+	border-bottom: 1px solid #777777;
+}
+
+#nav li ul a:hover {
+	background: #d4d4d4;
+}
+
+#nav ul ul ul {
+	top: auto;
+	border-top: none;
+	background: #ababab;
+}	
+
+#nav li ul ul {
+	left: 230px;
+}
+
+#nav li:hover ul ul,
+#nav li:hover ul ul ul,
+#nav li:hover ul ul ul ul {
+	display: none;	
+}
+
+#nav li:hover ul,
+#nav li li:hover ul,
+#nav li li li:hover ul,
+#nav li li li li:hover ul {
+	display: block;
+}
+
+/** Search
+==============================================================================*/
+
+#s {
+	height: 14px;
+	width: 184px;
+	font-size: 10px;
+	text-transform: uppercase;
+	margin: 7px 0 0 0;
+	padding: 3px 8px 2px 8px;
+	border: 1px solid #6a6a6a;
+	background: #fff;
+}
+
+/** Columns
+==============================================================================*/
+
+.singlecol {
+	width: 225px;
+}
+
+.twocol {
+	width: 465px;
+}
+
+.threecol {
+	width: 705px;
+}
+
+.fourcol {
+	width: 945px;
+}
+
+#leftcol {
+	width: 624px;
+}
+
+#sidebar, .widget {
+	width: 265px;
+}
+
+/** Container
+==============================================================================*/
+
+#container {
+	width: 945px;
+	margin: 0 auto;
+	position: relative;
+	top: -15px;
+	z-index: 2;
+	padding: 15px 15px 0 15px;
+	border: 1px solid #e1e1e1;
+	background: #fff; 0;
+}
+
+/** Logo
+==============================================================================*/
+
+#logo {
+	display: block;
+	margin: 15px auto 15px auto;
+}
+
+#textlogo {
+	margin: 36px 0 0 0;
+	text-align: center;
+}
+
+#textlogo h1 {
+	font-size: 64px;
+}
+
+#textlogo h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #999;
+	text-transform: none;
+}
+
+/** Content
+==============================================================================*/
+
+#content {
+	border-top: 2px solid #444;
+	padding: 15px 0 0 0;
+}
+
+/** Widgets
+==============================================================================*/
+
+.widget {
+	border-top: 2px solid #444;
+	padding: 15px 0 0 0;
+	margin: 0 0 15px 0;
+}
+
+.widget.first {
+	border-top: none;
+	padding: 0;
+}
+
+.widget p {
+	margin: 0 0 10px 0;
+}
+
+#ads.widget {
+	border: none;
+	padding: 0;
+}
+
+.smsqad {
+	margin: 0 15px 15px 0;
+}
+
+.smsqad.last {
+	margin-right: 0;
+}
+
+#advertise {
+	font-size: 10px;
+	margin: 0;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+#sidebar #flickr img {
+	float: left;
+	margin: 0 8px 8px 0;
+	height: 80px;
+	width: 80px;
+}
+
+#footerwidgets #flickr img {
+	float: left;
+	margin: 0 8px 8px 0;
+	height: 67px;
+	width: 67px;
+}
+
+
+#footerwidgets {
+	padding: 15px 0 15px 0;
+	border-top: 2px solid #444;
+}
+
+#footerwidgets ul {
+	padding: 0;
+}
+
+#sidebar ul li,
+#related ul li,
+#footerwidgets ul li {
+	list-style-type: none;
+	border-bottom: 1px solid #ccc;
+}
+
+#related ul {
+	margin: 0;
+}
+
+#sidebar ul li.item-last,
+#twitter ul li.tweet-last,
+#related ul li.item-last,
+#footerwidgets ul li.item-last {
+	border-bottom: none;
+}
+
+/** Slider
+==============================================================================*/
+
+#featured {
+	position: relative;
+	height: 300px;
+	width: 945px;
+	margin: 0 0 15px 0;
+	padding: 0 0 15px 0;
+	border-bottom: 2px solid #444;
+	overflow: hidden;
+}
+
+.featured-text {
+	position: absolute;
+	z-index: 3;
+	top: 15px;
+	right: 15px;
+	width: 313px;
+	min-height: 178px;
+	padding: 45px 15px 15px 15px;
+	overflow: hidden;
+	background: #fff;
+	filter:alpha(opacity=90);
+	-moz-opacity:0.9;
+	-khtml-opacity: 0.9;
+	opacity: 0.9;
+	
+}
+
+
+#featured a#prevarrow,
+#featured a#nextarrow {
+	position: absolute;
+	z-index: 2;
+	display: block;
+	width: 30px;
+	height: 30px;
+	outline: none;
+	cursor: pointer;
+}
+
+#featured a#prevarrow {
+	bottom: 15px;
+	left: 0;
+	background: url(images/prev_arrow.png) 6px 6px no-repeat #fff;
+}
+
+#featured a#nextarrow {
+	bottom: 15px;
+	right: 0;
+	background: url(images/next_arrow.png) 9px 6px no-repeat #fff;
+}
+
+#featured a#prevarrow span,
+#featured a#nextarrow span {
+	display: none;
+}
+
+#slides {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	height: 300px;
+	width: 945px;
+	overflow: hidden;
+}
+
+/** Article, Article Wide & Gallery
+==============================================================================*/
+
+.article, .gallery {
+	margin: 0 15px 15px 0;
+}
+
+.video,
+#postimg,
+.article img,
+.articlewide img {
+	margin: 0 0 10px 0;
+	border: 1px solid #e1e1e1;
+}
+
+.article p,
+.articlewide p {
+	margin: 0 0 10px 0;
+}
+
+.articlewide {
+	padding: 0 0 18px 0;
+	margin: 0 0 18px 0;
+	border-bottom: 1px solid #888888;
+}
+
+p.meta {
+	text-transform: uppercase;
+	font-size: 10px;
+	margin: 0 0 18px 0;
+	color: #888;
+}
+
+.commentnum {
+	margin: 0 0 0 8px;
+	padding: 0 0 0 8px;
+	border-left: 1px solid #e1e1e1;
+}
+
+#adminedit {
+	font-size: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 8px;
+	border: 1px solid #cdcdcd;
+	background: #ffffe5;
+}
+
+#authorinfo {
+	padding: 16px 16px 0 16px;
+	border: 1px solid #e1e1e1;
+	background: #efefef;
+}
+
+#authorinfo img.avatar {
+	float: left;
+	margin: 0 24px 24px 0;
+}
+
+img.relatedtn {
+	border: 1px solid #e1e1e1;
+}
+
+/** Post Nav
+==============================================================================*/
+
+#postnav {
+	width: 625px;
+	float: left;
+	margin: 0 0 15px 0;
+}
+
+#postnav.gallery {
+	width: 945px;
+}
+
+/** Page
+==============================================================================*/
+
+#page img {
+	margin: 0 0 10px 0;
+}
+
+/** Read More
+==============================================================================*/
+
+p.readmore {
+	margin: 0;
+}
+
+.readmore a {
+	display: block;
+	height: 18px;
+	width: 72px;
+	background: url(images/read_more.png) no-repeat 0 0;
+}
+
+.readmore a:hover {
+	background-position: 0 -18px;
+}
+
+.readmore a span {
+	display: none;
+}
+
+/** Info
+==============================================================================*/
+
+#info {
+	padding: 15px 0 0 0;
+	border-top: 2px solid #444;
+}
+
+#location .gsmsc-mapDiv {
+	height: 217px;
+}
+
+#location .gsmsc-idleMapDiv {
+	height: 217px;
+	overflow: hidden!important;
+}
+
+#location #mapsearch * {
+	margin: 0px!important;
+	padding: 0px!important;
+	font-size: 12px;
+}
+
+#location .gsmsc-controls,
+#location div.gs-directions-to-from {
+	display: none;
+}
+
+/** Twitter
+==============================================================================*/
+
+.tweet .tweet_text {
+	font-size: 10px;
+	color: #d0d0d0;
+	line-height: 12px;
+}
+
+#twitter ul {
+	margin: 0;
+	padding: 0;
+}
+
+#twitter ul li {
+	list-style-type: none;
+	line-height: 18px;
+	padding: 0 0 6px 0;
+	margin: 0 0 6px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+.last-tweet {
+	border: none;
+}
+
+.date, .author {
+	text-transform: uppercase;
+	font-size: 10px;
+	color: #666;
+}
+
+/** Comment Form / Contact Form
+==============================================================================*/
+
+#commentform,
+#contactform {
+	width: 582px;
+}
+
+fieldset {
+	border: none;
+}
+
+#commentform .text-input,
+#contactform .text-input,
+#commentform select,
+#contactform select {
+	width: 548px;
+	color: #555555;
+	font-size: 11px;
+	margin: 0 5px 10px 0;
+	border: 1px solid #cdcdcd;
+	background-color: #fff;
+}
+
+#commentform input.text-input,
+#contactform input.text-input {
+	height: 19px;
+	padding: 6px 16px 0 16px;
+}
+
+#commentform select {
+	padding: 5px 3px 5px 15px;
+}
+
+#commentform textarea.text-input,
+#contactform textarea.text-input {
+	height: 178px;
+	padding: 6px 16px 0 16px;
+}
+
+#commentform input:focus,
+#commentform select:focus,
+#commentform textarea:focus,
+#contactform input:focus,
+#contactform select:focus,
+#contactform textarea:focus{
+	background: #efefef;
+}
+
+#submit:hover {
+	cursor: pointer;	
+}
+
+#comments {
+	margin: 32px 0 32px 0;
+}
+
+.userinfo {
+	width: 589px;
+	border-top: 1px solid #cdcdcd;
+	padding: 8px 0 0 0;
+}
+
+.userinfo p {
+	margin: 0;
+}
+
+p.user {
+	font-size: 16px;
+}
+
+p.comdate {
+	font-size: 11px;
+	line-height: 12px;
+	text-transform: uppercase;
+}
+
+.useravatar {
+	width: 40px;
+	margin: 0 0 0 16px;
+}
+
+div.rightcol p.comdate:last-child {
+	margin: 0;
+}
+
+#comments .rightcol {
+	margin-bottom: 24px;
+}
+
+.comcontent {
+	width: 589px;
+	margin: 0 0 24px 0;
+}
+
+.comcontent, #loggedin {
+	padding: 16px;
+	border: 1px solid #cdcdcd;
+	background: #f7f7f7;
+}
+
+.authcomment {
+	background: #ffffe5;
+}
+
+.editcom {
+	font-size: 10px;
+	margin: 0;
+	text-align: right;
+	text-transform: uppercase;
+}
+
+/** Footer
+==============================================================================*/
+
+#footer {
+	font-size: 10px;
+	text-transform: uppercase;
+	padding: 15px 0 0 0;
+	border-top: 2px solid #444;
+}
+
+/** Remove Margin From Last Item
+==============================================================================*/
+
+.last, img.last {
+	margin-right: 0;
+}

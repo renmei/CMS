@@ -1,0 +1,118 @@
+/*
+Theme Name: Industrious
+Theme URI: http://themeforest.net/user/contempoinc?ref=contempoinc
+Description: A child theme for WP Industry, moves the navigation from the top to below the logo area.  This theme is Shared by <a href="http://www.free-premium-wordpress-themes.com"><strong>Free Premium Wordpress Themes</strong></a>
+Version: 1.0
+Template: industry
+Author: Chris Robinson
+Author URI: http://www.free-premium-wordpress-themes.com/
+*//*
+                                       |___|
+                                       |- -|                                   
+                  +---------------oooO--(o)---------------------+              
+                  |                  Visit Us At                |              
+                  |	                                            |              
+                  |    www.free-premium-wordpress-themes.com    |              
+                  |                                             |              
+                  +--------------------------Ooo----------------+              
+                                      |__|__|                                  
+                                       || ||                                   
+                                      ooO Ooo                             
+*/
+
+@import url('../industry/style.css');
+
+/** Navigation below the logo area
+==============================================================================*/
+
+#subnav {
+	width: 945px;
+	height: 39px;
+	border-top: 2px solid #444;
+}
+
+#subnav ul,
+#subnav ul ul {
+	list-style-position: outside;
+	position: relative;
+	z-index: 5;
+	padding: 3px 0 0 0;
+}
+
+#subnav li {
+	float: center;
+	line-height: 35px;
+	border-right: 1px solid #ccc;
+}
+
+#subnav li ul li {
+	background-image: none;
+}
+
+#subnav li {
+	float: left;
+	position: relative;
+	z-index: 20;
+}
+
+#subnav li a {
+	display: block;
+	position: relative;
+	float: center;
+	height: 35px;
+	padding: 0 16px;
+	z-index: 35;
+}
+
+#subnav ul ul {
+	display: none;
+	left: -1px;
+	position: absolute;
+	top: 34px;
+	width: 233px;
+	border-left: 1px solid #444;
+	background: #fff;
+}
+
+#subnav li ul a {
+	width: 200px;
+	height: auto;
+	float: center;
+	text-align: left;
+	padding: 0 16px;
+	border-bottom: 1px solid #444;
+}
+
+#subnav li ul a:hover {
+	background: #d4d4d4;
+}
+
+#subnav ul ul ul {
+	top: auto;
+	border-top: none;
+	background: #fff;
+}	
+
+#subnav li ul ul {
+	left: 233px;
+}
+
+#subnav li:hover ul ul,
+#subnav li:hover ul ul ul,
+#subnav li:hover ul ul ul ul {
+	display: none;	
+}
+
+#subnav li:hover ul,
+#subnav li li:hover ul,
+#subnav li li li:hover ul,
+#subnav li li li li:hover ul {
+	display: block;
+}
+
+/** Search
+==============================================================================*/
+
+#s {
+	margin-top: 9px;
+}
