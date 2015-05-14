@@ -1,0 +1,5 @@
+<?php /* Smarty version 2.6.26, created on 2015-05-14 12:04:47
+         compiled from db:tpl_8951751da6 */ ?>
+<?php require_once(SMARTY_CORE_DIR . 'core.load_plugins.php');
+smarty_core_load_plugins(array('plugins' => array(array('block', 'gallery', 'db:tpl_8951751da6', 1, false),)), $this); ?>
+<div class="gallery"><?php $this->_tag_stack[] = array('gallery', array('popup' => 'thickbox')); $_block_repeat=true;smarty_gallery($this->_tag_stack[count($this->_tag_stack)-1][1], null, $this, $_block_repeat);while ($_block_repeat) { ob_start(); ?> <a href="%imageurl%%filename%" title="%title%" rel="gallery-%uid%" class="thickbox"> <img src="%pivotxurl%includes/timthumb.php?src=%filename%&amp;w=106&amp;h=80" alt="%alttext%" /> </a> <?php $_block_content = ob_get_contents(); ob_end_clean(); $_block_repeat=false;echo smarty_gallery($this->_tag_stack[count($this->_tag_stack)-1][1], $_block_content, $this, $_block_repeat); }  array_pop($this->_tag_stack); ?></div>

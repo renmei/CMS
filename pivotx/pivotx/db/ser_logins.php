@@ -1,0 +1,1 @@
+<?php /* pivot */ die(); ?>a:2:{s:6:"failed";a:0:{}s:9:"succeeded";a:2:{i:0;a:3:{s:8:"username";s:7:"mzoltko";s:4:"time";i:1430996385;s:2:"ip";s:13:"31.61.140.131";}i:1;a:3:{s:8:"username";s:7:"mzoltko";s:4:"time";i:1431597665;s:2:"ip";s:12:"31.61.140.62";}}}
